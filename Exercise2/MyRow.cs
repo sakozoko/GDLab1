@@ -14,6 +14,7 @@ namespace GDLab1.Exercise2
         {
             Amount = amount;
             Variable = variable;
+            Func = new Function();
         }
 
         public MyRow(uint amount, double variable, IFunction func)
@@ -43,12 +44,6 @@ namespace GDLab1.Exercise2
                 _amount = value;
             }
         }
-
-        #endregion
-
-        #region Func
-
-        protected override IFunction Func { get; } = new Function();
 
         #endregion
 

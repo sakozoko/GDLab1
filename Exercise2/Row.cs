@@ -4,7 +4,7 @@
     {
         #region Properties
 
-        public abstract uint Amount { get; init; }
+        public virtual uint Amount { get; init; }
 
         private double _result;
 
@@ -24,7 +24,7 @@
         /// <summary>
         /// Should be able to count member of row
         /// </summary>
-        protected abstract IFunction Func { get; }
+        protected IFunction Func { get; init; }
         #endregion
 
         #region Private methods
