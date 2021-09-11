@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace GDLab1
+namespace GDLab1.Exercise1
 {
     public class Triangle
     {

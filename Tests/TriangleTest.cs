@@ -1,14 +1,14 @@
 using System.Drawing;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GDLab1;
+using GDLab1.Exercise1;
+
 namespace Tests
 {
     [TestClass]
     public class TriangleTest
     {
         [TestMethod]
-        public void GetSquareTest()
+        public void GetAreaTest()
         {
             const double delta = 0.00001d;
 
