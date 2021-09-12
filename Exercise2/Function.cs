@@ -11,7 +11,7 @@ namespace GDLab1.Exercise2
     }
 
     /// <summary>
-    /// Func2 for testing abstract system
+    ///     Func2 for testing abstract system
     /// </summary>
     public class Function2 : IFunction
     {

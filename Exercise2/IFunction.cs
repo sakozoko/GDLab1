@@ -3,7 +3,7 @@
     public interface IFunction
     {
         /// <summary>
-        /// Can to count a member of the row
+        ///     Can to count a member of the row
         /// </summary>
         /// <param name="number">member number</param>
         /// <param name="x">variable X</param>

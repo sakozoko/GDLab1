@@ -16,28 +16,6 @@ namespace GDLab1.Exercise1
 
         #endregion
 
-        #region Properties
-
-        private MyLine Line1 { get; }
-        private MyLine Line2 { get; }
-        private MyLine Line3 { get; }
-
-        private double _area;
-        /// <summary>
-        /// Returns area of a triangle, if the triangle is incorrect, returns 0
-        /// </summary>
-        public double Area
-        {
-            get
-            {
-                if (_area is 0d)
-                    CalculateArea();
-                return _area;
-            }
-            private set => _area = value;
-        }
-        #endregion
-
         #region CalculateAreaMethod
 
         private void CalculateArea()
@@ -52,7 +30,6 @@ namespace GDLab1.Exercise1
 
         private class MyLine
         {
-
             #region Constructor
 
             public MyLine(Point one, Point two)
@@ -70,7 +47,30 @@ namespace GDLab1.Exercise1
             public double Length { get; }
 
             #endregion
+        }
 
+        #endregion
+
+        #region Properties
+
+        private MyLine Line1 { get; }
+        private MyLine Line2 { get; }
+        private MyLine Line3 { get; }
+
+        private double _area;
+
+        /// <summary>
+        ///     Returns area of a triangle, if the triangle is incorrect, returns 0
+        /// </summary>
+        public double Area
+        {
+            get
+            {
+                if (_area is 0d)
+                    CalculateArea();
+                return _area;
+            }
+            private set => _area = value;
         }
 
         #endregion

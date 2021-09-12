@@ -3,11 +3,10 @@
 namespace GDLab1.Exercise2
 {
     /// <summary>
-    /// implements abstract Row
+    ///     implements abstract Row
     /// </summary>
     public sealed class MyRow : Row
     {
-
         #region Constructors
 
         public MyRow(uint amount, double variable)
@@ -31,8 +30,9 @@ namespace GDLab1.Exercise2
         #region Amount
 
         private readonly uint _amount;
+
         /// <summary>
-        /// implements abstract property Amount
+        ///     overrides virtual property Amount
         /// </summary>
         public override uint Amount
         {
@@ -48,6 +48,5 @@ namespace GDLab1.Exercise2
         #endregion
 
         #endregion
-
     }
 }

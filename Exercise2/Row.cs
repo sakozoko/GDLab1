@@ -2,6 +2,17 @@
 {
     public abstract class Row
     {
+        #region Private methods
+
+        private void GetResult()
+        {
+            double res = 0;
+            for (uint c = 1; c <= Amount; c++) res += Func.GetMember(c, Variable);
+            Result = res;
+        }
+
+        #endregion
+
         #region Properties
 
         public virtual uint Amount { get; init; }
@@ -22,19 +33,9 @@
         protected double Variable { get; set; }
 
         /// <summary>
-        /// Should be able to count member of row
+        ///     Should be able to count member of row
         /// </summary>
         protected IFunction Func { get; init; }
-        #endregion
-
-        #region Private methods
-
-        private void GetResult()
-        {
-            double res = 0;
-            for (uint c = 1; c <= Amount; c++) res += Func.GetMember(c, Variable);
-            Result = res;
-        }
 
         #endregion
     }
